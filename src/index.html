@@ -91,54 +91,266 @@
     </div>
   </nav>
   <section class="content">
+    <!-- General Statistic -->
     <div class="general container active " id="sb-general">
-      <div class="topic">
+      <div class="title">
         <h4>GENERAL STATISTIC</h4>
       </div>
       <div class="calendar">
         <input type="date" id="start" value="2020-02-01" min="2019-02-01">
         <input type="date" id="end" value="2020-02-01" min="2019-02-01">
-        <button class="btn btn-ora" style="width: 30px; padding-top: 9px;">
+        <button class="btn btn-orange" style="width: 30px; padding-top: 9px;">
 
           <i class="icon-refresh"></i>
         </button>
       </div>
 
-  <!-- Pop-ups -->
-  <div class="pop-ups" id="login">
-    <div class="login">
-      <div class="topic">
-        <h4>LOGIN</h4>
-      </div>
-      <form action="">
-        <div class="input-container">
-          <i class="icon-login"></i>
-          <input class="input-field" type="text" placeholder="login name" name="usrnm">
+      <div class="general container active " id="sb-general">
+        <div class="title">
+          <h4>GENERAL STATISTIC</h4>
         </div>
-        <div class="input-container">
-          <i class="icon-password"></i>
-          <input class="input-field" type="password" placeholder="password" name="usrnm">
+        <div class="calendar">
+          <input type="date" id="start" value="2020-02-01" min="2019-02-01">
+          <input type="date" id="end" value="2020-02-01" min="2019-02-01">
+          <button class="btn btn-orange" style="width: 30px; padding-top: 9px;">
+
+            <i class="icon-refresh"></i>
+          </button>
         </div>
-        <button id="btnCancel" class="btn btn-ora" onclick="popupsCancel()">
-          <span>Enter</span>
-        </button>
-      </form>
-    </div>
-  </div>
-  <div class="pop-ups" id="quit">
-    <div class="quit">
-      <div class="topic">
-        <h4>Do you really want to Quit</h4>
+        <div class="statistic">
+          <table>
+            <tr>
+              <td>
+                <div>Visit Singnups</div>
+                <div class="number">124</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>FTD</div>
+                <div class="number">445</div>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>
+                <div>Net deposit</div>
+                <div class="number">4</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>Turn over</div>
+                <div class="number">5</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p>Earnings chart</p>
+        <div class="earnings">
+          <div class="table">
+            <canvas id="myChart" style="width: 100%;"></canvas>
+          </div>
+        </div>
       </div>
-      <div class="buttons">
-        <button class="btn btn-grey" id="btnCancel" onclick="popupsCancel()">Cancel</button>
-        <button class="btn btn-ora" id="btnCancel" onclick="popupsCancel()"> Quit</button>
-      </div>
     </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-  <script type="text/javascript" src="./js/script.js">
-  </script>
+      <!-- Links -->
+      <div class="links container" id="sb-links">
+        <div class="title">
+          <h4>LINKS</h4>
+        </div>
+        <div class="button">
+          <button class="btn btn-orange">
+            + add new
+          </button>
+        </div>
+        <table>
+          <tr>
+            <td>
+              <span>
+                Home page
+              </span>
+              <a href="#">
+                http://www.homepage.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Currently offer
+              </span>
+              <a href="#">
+                http://www.currentlycom
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Blurpix
+              </span>
+              <a href="#">
+                http://www.blurpix.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Your Site
+              </span>
+              <a href="#">
+                http://www.yoursite.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Google
+              </span>
+              <a href="#">
+                http://www.google.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Facebook
+              </span>
+              <a href="#">
+                http://www.facebookcom
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Dashboard
+              </span>
+              <a href="#">
+                http://www.dashboard.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Blurax
+              </span>
+              <a href="#">
+                http://www.blurax.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Piece of Wine
+              </span>
+              <a href="#">
+                http://www.pieceofwine.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Twitter
+              </span>
+              <a href="#">
+                http://www.twitter.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="button">
+          <button class="btn btn-orange">
+            + add new
+          </button>
+        </div>
+      </div>
+</section>
+      <!-- Pop-ups -->
+      <div class="pop-ups" id="login">
+        <div class="login">
+          <div class="title">
+            <h4>LOGIN</h4>
+          </div>
+          <form action="">
+            <div class="input-container">
+              <i class="icon-login"></i>
+              <input class="input-field" type="text" placeholder="login name" name="usrnm">
+            </div>
+            <div class="input-container">
+              <i class="icon-password"></i>
+              <input class="input-field" type="password" placeholder="password" name="usrnm">
+            </div>
+            <button id="btnCancel" class="btn btn-orange" onclick="popupsCancel()">
+              <span>Enter</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="pop-ups" id="quit">
+        <div class="quit">
+          <div class="title">
+            <h4>Do you really want to Quit</h4>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-grey" id="btnCancel" onclick="popupsCancel()">Cancel</button>
+            <button class="btn btn-ora" id="btnCancel" onclick="popupsCancel()"> Quit</button>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+      <script type="text/javascript" src="./js/script.js">
+      </script>
 </body>
 
 </html>

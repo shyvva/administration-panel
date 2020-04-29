@@ -1,1 +1,47 @@
 
+.btn{
+  color: $light-grey;
+  width: auto;
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i{
+      color: $inputs-color;
+  }
+
+}
+.btn-orange{
+  background-color: $main-color;
+}
+.btn-orange:hover{
+  background-color: $hover-main-color;
+}
+.btn-grey{
+  background-color: $button-grey;
+}
+.btn-grey:hover{
+  background-color: $button-grey-hover;
+}
+.btn-trans{
+  background-color: transparent;
+  color: $links-color;
+}
+.btn-trans:hover{
+  background-color: $inputs-color;
+  color: $button-grey;
+}
+.button{
+  display: flex;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  .btn{
+      width: 110px;
+      height: 35px;
+      margin-top: 20px;
+  }
+}

@@ -1,2 +1,85 @@
+.general{
 
+  .statistic{
+      display: flex;
+      margin:  30px 250px;
+      justify-content: center;
+      color: $button-grey;
+      table{
+          margin-left: 15px;
+          min-width: 330px;
+          }
+          tr:hover{
+              background-color: $light-grey;
+          }
+          tr{
+              margin: 15px;
+              td{
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 0 50px;
+                  border-bottom: 1px solid $button-grey;
+                  div{
+                      margin: 10px 0;
+                  }
+                  .number{
+                      color: $paragraph-color;
+                  }
+              }
+          }
+      }
 
+  .blue{
+      color:$links-color;
+  }
+  .red{
+      color: $red;
+  }
+  .green{
+      color: $green;
+  }
+  .orange{
+      color: $main-color;
+  }
+  p{
+      text-align: left;
+      height: 20px;
+      margin: 0 250px;
+      padding-top: 30px;
+  }
+  .earnings{
+      display: flex;
+      margin:  0 0 50px 0;
+      color: $button-grey;
+      justify-content: center;
+      align-items: center;
+      .color-button{
+          width: 100%;
+         display: flex;
+         justify-content: center;
+         padding: 10px;
+         button{
+             margin: 20px 15px;
+             i{
+             padding: 10px;
+             }
+             span{
+              padding: 10px;
+             }
+         }
+      }
+      .table{
+          width: 65%;
+          margin-bottom: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          #myChart{
+              width: 784px;
+              height: 392px;
+            }
+
+      }
+  }
+}

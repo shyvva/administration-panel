@@ -1,17 +1,17 @@
 /* eslint-disable no-unused-vars */
 function burgerSidebar(){
   const btn = document.getElementById('menu-toggle');
-  const cls = { open: 'open', close: 'close' };
+  const selectClass = { open: 'open', close: 'close' };
   const sidebar = document.getElementById('side');
   const body = document.getElementById('body');
-  let btnClass = cls.open;
+  let btnClass = selectClass.open;
   btn.addEventListener('click', function(){
-    if (btn.classList.contains(cls.open)) {
+    if (btn.classList.contains(selectClass.open)) {
       btn.classList.remove(btnClass);
-      btnClass = cls.close;
-    } else if (btn.classList.contains(cls.close)) {
+      btnClass = selectClass.close;
+    } else if (btn.classList.contains(selectClass.close)) {
       btn.classList.remove(btnClass);
-      btnClass = cls.open;
+      btnClass = selectClass.open;
     }
 
     void btn.offsetWidth;
@@ -24,7 +24,6 @@ function burgerSidebar(){
 burgerSidebar();
 
 /* Icons */
-// const messagerIcon = document.getElementById('pop-messager');
 const quitIcon = document.getElementById('pop-quit');
 const profilIcon = document.getElementById('pop-profil');
 /* Pops-up */
@@ -44,12 +43,6 @@ function popupsCancel(){
   login.classList.remove('up');
   quit.classList.remove('up');
 }
-// Pop-Ups Login
-
-
-// Pop-ups Quit
-
-// popUps();
 
 function sidebarActive(){
   const sidebars = document.querySelectorAll('.sidebar-menu');

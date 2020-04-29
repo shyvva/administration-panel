@@ -1,1 +1,43 @@
-
+.links {
+  table {
+    tbody {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      tr {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    margin: 30px 0;
+    td {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $button-grey;
+      border-collapse: collapse;
+      border-spacing: 0;
+      padding: 10px 10px;
+      width: 70%;
+      a {
+        color: $links-color;
+        text-decoration: none;
+      }
+      i {
+        color: transparent;
+        margin: 0 5px;
+      }
+    }
+    td:hover {
+      background-color: $inputs-color;
+      .icon-links {
+        color: $hover-main-color;
+      }
+      .icon-trash {
+        color: $button-grey;
+      }
+    }
+  }
+}
