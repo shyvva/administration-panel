@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pl" style="background: bottom;">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Panel Administracyjny</title>
+  <title>Administration Panel</title>
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body id="body">
   <div class="media-menu">
     <div class="burger">
@@ -17,44 +19,126 @@
         <div class="line"></div>
         <div class="line"></div>
       </button>
-     </div>
-     <span>Just  Do  It<span>!</span> </span>
     </div>
-   <div class="sidebar" id="side">
-      <div class="sidebar-head">
-        <span>Just Do It!</span>
+    <span>Just Do It<span>!</span> </span>
+  </div>
+  <div class="sidebar" id="side">
+    <div class="sidebar-head">
+      <span>Just Do It!</span>
+    </div>
+    <div class="sidebar-menu side-click" id="sb-general">
+      <i class="icon-general"></i>
+      <p>General</p>
+    </div>
+    <div class="sidebar-menu" id="sb-details">
+      <i class="icon-details"></i>
+      <p>Details</p>
+    </div>
+    <div class="sidebar-menu" id="sb-links">
+      <i class="icon-links"></i>
+      <p>Links</p>
+    </div>
+    <div class="sidebar-menu" id="sb-banner">
+      <i class="icon-banners"></i>
+      <p>Banners</p>
+    </div>
+    <div class="sidebar-menu" id="sb-personal">
+      <i class="icon-personaldata"></i>
+      <p>Personal data</p>
+    </div>
+    <div class="sidebar-menu" id="sb-payout">
+      <i class="icon-payout"></i>
+      <p>Payout</p>
+    </div>
+    <div class="sidebar-menu" id="sb-postback">
+      <i class="icon-postback"></i>
+      <p>Postback</p>
+    </div>
+    <div class="sidebar-manager">
+      <span>YOUR MANAGER</span>
+    </div>
+    <div class="media-navbar">
+      <i class="icon-quit" id="pop-quit"></i>
+      <div class="profil" id="pop-profil">
+        <i class="icon-profile"></i>
+        <span class="name">
+          Howard Lovecraft
+        </span>
       </div>
-      <div class="sidebar-menu side-click" id="sb-general">
-        <i class="icon-general"></i>
-        <p>General</p>
+      <i class="icon-notification" id="pop-message"></i>
+      <div class="money">
+        <i class="icon-wallet"></i>
+        <span>$1,500.00</span>
+        <i class="icon-arrow-down-small"></i>
       </div>
-      <div class="sidebar-menu" id="sb-details">
-        <i class="icon-details"></i>
-        <p>Details</p>
+    </div>
+  </div>
+  <nav class="navbar" id="nav">
+    <button id="pop-quit" onclick="popupsQuit()">
+      <i class="icon-quit"></i>
+    </button>
+    <div class="profil" id="pop-profil" onclick="popupsLogin()">
+      <i class="icon-profile "></i>
+      <span class="name">
+        Sylvanas Windrunner
+      </span>
+    </div>
+    <i class="icon-notification" id="pop-message"></i>
+    <div class="money">
+      <i class="icon-wallet"></i>
+      <span>$1,500.00</span>
+      <i class="icon-arrow-down-small"></i>
+    </div>
+  </nav>
+  <section class="content">
+    <div class="general container active " id="sb-general">
+      <div class="topic">
+        <h4>GENERAL STATISTIC</h4>
       </div>
-      <div class="sidebar-menu" id="sb-links">
-        <i class="icon-links"></i>
-        <p>Links</p>
-      </div>
-      <div class="sidebar-menu" id="sb-banner">
-        <i class="icon-banners"></i>
-        <p>Banners</p>
-      </div>
-      <div class="sidebar-menu" id="sb-personal">
-        <i class="icon-personaldata"></i>
-        <p>Personal data</p>
-      </div>
-      <div class="sidebar-menu" id="sb-payout">
-        <i class="icon-payout"></i>
-        <p>Payout</p>
-      </div>
-      <div class="sidebar-menu" id="sb-postback">
-        <i class="icon-postback"></i>
-        <p>Postback</p>
-      </div>
-      <div class="sidebar-manager">
-        <span>YOUR MANAGER</span>
+      <div class="calendar">
+        <input type="date" id="start" value="2020-02-01" min="2019-02-01">
+        <input type="date" id="end" value="2020-02-01" min="2019-02-01">
+        <button class="btn btn-ora" style="width: 30px; padding-top: 9px;">
+
+          <i class="icon-refresh"></i>
+        </button>
       </div>
 
+  <!-- Pop-ups -->
+  <div class="pop-ups" id="login">
+    <div class="login">
+      <div class="topic">
+        <h4>LOGIN</h4>
+      </div>
+      <form action="">
+        <div class="input-container">
+          <i class="icon-login"></i>
+          <input class="input-field" type="text" placeholder="login name" name="usrnm">
+        </div>
+        <div class="input-container">
+          <i class="icon-password"></i>
+          <input class="input-field" type="password" placeholder="password" name="usrnm">
+        </div>
+        <button id="btnCancel" class="btn btn-ora" onclick="popupsCancel()">
+          <span>Enter</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="pop-ups" id="quit">
+    <div class="quit">
+      <div class="topic">
+        <h4>Do you really want to Quit</h4>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-grey" id="btnCancel" onclick="popupsCancel()">Cancel</button>
+        <button class="btn btn-ora" id="btnCancel" onclick="popupsCancel()"> Quit</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script type="text/javascript" src="./js/script.js">
+  </script>
 </body>
+
 </html>

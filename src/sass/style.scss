@@ -4,10 +4,21 @@
 @import "layout";
 @import "global";
 /* Components */
-@import "./components/component-burger";
 @import "./components/component-sidebar";
+@import "./components/component-topic";
+@import "./components/component-buttons";
+@import "./components/component-burger";
+@import "./components/component-calendar";
 /* Sections */
-
+@import "sections/sidebar";
+@import "sections/navbar";
+@import "sections/content";
+@import "./sections/media-menu";
 /* Pages / Views */
+@import "./pages/page-general";
+@import "./pages/page-links";
+@import "./pages/page-personal";
+@import "./pages/page-tabels";
+@import "./pages/page-pop-ups";
 /* Media */
 @import "./media";
