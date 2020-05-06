@@ -4,49 +4,59 @@
     display: grid;
     grid-template-columns: 0;
     grid-template-rows: 50px 1fr;
+
     .burger {
       display: flex;
       align-items: flex-start;
     }
   }
+
   .title {
     justify-content: left;
   }
   /* Sidebar */
   .sidebar {
     display: none;
+
     .media-navbar {
       margin-top: 20px;
       display: flex;
       flex-direction: column-reverse;
       justify-content: space-between;
       align-items: center;
+
       .money {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 10px 0;
         margin-top: 30px;
+
         i {
           padding: 0 4px;
         }
+
         span {
           font-weight: 500;
         }
       }
+
       i {
         margin: 0 5px;
       }
+
       .profil {
         display: flex;
         align-items: center;
         margin: 10px 0;
+
         .name {
           height: 15px;
           font-size: 12px;
           padding-right: 5px;
         }
       }
+
       .icon-notification {
         text-align: center;
         width: 100%;
@@ -55,6 +65,7 @@
         border-top: 1px solid $button-grey-hover;
         border-bottom: 1px solid $button-grey-hover;
       }
+
       .icon-quit {
         text-align: center;
         width: 100%;
@@ -82,6 +93,7 @@
     p {
       text-align: center;
     }
+
     .statistic {
       margin: 30px 0;
       display: block;
@@ -100,6 +112,7 @@
         }
       }
     }
+
     .earnings {
       margin: 0;
       margin-bottom: 50px;
@@ -123,16 +136,20 @@
     table {
       margin: 30px;
       margin-bottom: 0px;
+
       td {
         width: 100%;
         justify-content: space-between;
+
         span {
           text-align: left;
           padding: 0 30px;
         }
+
         a {
           padding: 0 30px;
         }
+
         .icons {
           padding: 0 30px;
         }
@@ -145,9 +162,11 @@
     .field {
       flex-direction: column;
       display: block;
+
       label {
         width: 100%;
       }
+
       input {
         width: 100%;
       }
@@ -158,9 +177,11 @@
     table {
       tr {
         flex-direction: row;
+
         th {
           flex: 33.3%;
         }
+
         td {
           flex: 33.3%;
         }
@@ -172,6 +193,7 @@
 .dis-block {
   display: block;
 }
+
 .grid {
   grid-template-columns: 150px;
 }
