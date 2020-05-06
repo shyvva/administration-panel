@@ -1,0 +1,67 @@
+.tables{
+  table{
+      display: block;
+      margin: 20px 5px;
+      tbody{
+          display: block;
+         tr{
+              border-bottom: 1px solid $inputs-color;
+              display: flex;
+              width: 100%;
+              th{
+                  color: $button-grey-hover;
+                  padding: 5px;
+                  flex: 0.916%;
+                  font-size: 14px;
+                  i{
+                      display: none;
+                      font-size: 10px;
+                      padding-left: 7px;
+                      text-align: left;
+                  }
+              }
+              th:hover{
+                  background-color: $button-grey ;
+                  color: $inputs-hover-color;
+                  i{
+                      display: inline;
+                      color: $button-grey-hover;
+                  }
+              }
+              td{
+                  text-align: center;
+                  color: $inputs-hover-color;
+                  padding: 10px;
+                  flex: 0.916%;
+                  font-size: 14px;
+              }
+          }
+          tr:hover{
+              background-color: $button-grey-hover;
+          }
+          tr:first-of-type:hover{
+              background-color: transparent;
+          }
+      }
+  }
+  .belt{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      font-size: 14px;
+
+      span{
+          color: $links-color;
+          padding: 10px;
+          margin-bottom: 5px;
+      }
+      i{
+          padding: 10px;
+      }
+      span:hover{
+          background-color: $inputs-color;
+          color: $button-grey-hover;
+      }
+  }
+}
