@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" style="background: bottom;">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -64,7 +64,7 @@
       <div class="profil" id="pop-profil">
         <i class="icon-profile"></i>
         <span class="name">
-          Howard Lovecraft
+          Sylvanas Windrunner
         </span>
       </div>
       <i class="icon-notification" id="pop-message"></i>
@@ -92,541 +92,654 @@
       <i class="icon-arrow-down-small"></i>
     </div>
   </nav>
-  <section class="content general-statistic">
+
+  <section class="content">
     <!-- General Statistic -->
+    <article class="general-statistic">
+      <div class="general container active " id="sb-general">
+        <div class="title">
+          <h4>GENERAL STATISTIC</h4>
+        </div>
+        <div class="calendar">
+          <input type="date" id="start" value="2020-04-29" min="2019-02-01">
+          <input type="date" id="end" value="2020-04-29" min="2019-02-01">
+          <button class="btn btn-orange" style="width: 30px; padding-top: 9px;">
 
-    <div class="general container active " id="sb-general">
-      <div class="title">
-        <h4>GENERAL STATISTIC</h4>
-      </div>
-      <div class="calendar">
-        <input type="date" id="start" value="2020-04-29" min="2019-02-01">
-        <input type="date" id="end" value="2020-04-29" min="2019-02-01">
-        <button class="btn btn-orange" style="width: 30px; padding-top: 9px;">
-
-          <i class="icon-refresh"></i>
-        </button>
-      </div>
-      <div class="statistic">
-        <table>
-          <tr>
-            <td>
-              <div>Visit Singnups</div>
-              <div class="number">124</div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div>FTD</div>
-              <div class="number">445</div>
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>
-              <div>Net deposit</div>
-              <div class="number">4</div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div>Turn over</div>
-              <div class="number">5</div>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <p>Earnings chart</p>
-      <div class="earnings">
-        <div class="table">
-          <canvas id="myChart" style="width: 100%;"></canvas>
+            <i class="icon-refresh"></i>
+          </button>
+        </div>
+        <div class="statistic">
+          <table>
+            <tr>
+              <td>
+                <div>Visit Singnups</div>
+                <div class="number">124</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>FTD</div>
+                <div class="number">445</div>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>
+                <div>Net deposit</div>
+                <div class="number">4</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>Turn over</div>
+                <div class="number">5</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p>Earnings chart</p>
+        <div class="earnings">
+          <div class="table">
+            <canvas id="myChart" style="width: 100%;"></canvas>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-  </section>
+      </div>
+    </article>
 
-  <!-- Links -->
-  <section class="content links">
-    <div class="links container" id="sb-links">
-      <div class="title">
-        <h4>LINKS</h4>
-      </div>
-      <div class="button">
-        <button class="btn btn-orange">
-          + add new
-        </button>
-      </div>
-      <table>
-        <tr>
-          <td>
-            <span>
-              Home page
-            </span>
-            <a href="#">
-              http://www.homepage.com
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Currently offer
-            </span>
-            <a href="#">
-              http://www.currentlycom
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Blurpix
-            </span>
-            <a href="#">
-              http://www.blurpix.com
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Your Site
-            </span>
-            <a href="#">
-              http://www.yoursite.com
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Google
-            </span>
-            <a href="#">
-              http://www.google.com
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Facebook
-            </span>
-            <a href="#">
-              http://www.facebookcom
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Dashboard
-            </span>
-            <a href="#">
-              http://www.dashboard.com
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Blurax
-            </span>
-            <a href="#">
-              http://www.blurax.com
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Piece of Wine
-            </span>
-            <a href="#">
-              http://www.pieceofwine.com
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Twitter
-            </span>
-            <a href="#">
-              http://www.twitter.com
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <div class="button">
-        <button class="btn btn-orange">
-          + add new
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Personal Data -->
-
-  <section class="content personal-data-form">
-    <div class="personal-data container" id="sb-personal">
-      <div class="title">
-        <h4>PERSONAL DATA</h4>
-      </div>
-      <div class="container-form">
-        <form action="" method="POST" onsubmit="return validation()">
-          <div class="field">
-            <label>Name</label>
-            <input type="text" name="user-name" required id="Name">
-          </div>
-          <div class="field">
-            <label>Surname</label>
-            <input type="text" name="user-surname" required id="Surname">
-          </div>
-          <div class="field">
-            <label>E-mail</label>
-            <input type="email" name="user-email" required id="EMail">
-          </div>
-          <div class="field">
-            <label>Phone number</label>
-            <input type="text" name="user-phone" min="9" max="9" required id="Telephone">
-          </div>
-        </form>
-      </div>
-      <div class="container-form">
-        <form action="" method="POST">
-          <div class="field">
-            <label>Skype</label>
-            <input type="text" name="user-skype">
-          </div>
-          <div class="field">
-            <label>ICQ</label>
-            <input type="text" name="user-icq">
-          </div>
-          <div class="field">
-            <label>Man</label>
-            <input type="text" name="user-man">
-          </div>
-        </form>
-      </div>
-      <div class="container-form">
-        <form action="" method="POST">
-          <div class="field">
-            <label>Wallet</label>
-            <input type="text" name="user-wallet">
-          </div>
-        </form>
-      </div>
-      <div class="container-form">
-        <form action="" method="POST">
-          <div class="field">
-            <label>Password</label>
-            <input type="password" name="user-password" id="Password">
-          </div>
-          <div class="field">
-            <label>Repeat</label>
-            <input type="password" name="user-rep-password" id="Repeat">
-          </div>
-        </form>
-      </div>
-      <div class="button">
-        <button class="btn btn-orange" type="submit"><span>Save</span></button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Detalist Statistic -->
-
-  <section class="content detalist-statistic">
-    <div class="tables container" id="sb-details">
-      <div class="title">
-        <h4>DETALIST STATISTIC</h4>
-      </div>
-      <div class="calendar">
-        <input type="date" id="start" value="2020-02-01" min="2019-02-01">
-        <input type="date" id="end" value="2020-02-01" min="2019-02-01">
-        <button class="btn btn-ora" style="width: 30px; padding-top: 9px;">
-          <i class="icon-refresh"></i>
-        </button>
-      </div>
-      <div class="statistic">
+    <!-- Links -->
+    <article class="links-page">
+      <div class="links container" id="sb-links">
+        <div class="title">
+          <h4>LINKS</h4>
+        </div>
+        <div class="button">
+          <button class="btn btn-orange">
+            + add new
+          </button>
+        </div>
         <table>
           <tr>
-            <th>Tracker<i class="icon-arrow-down-small"></i> </th>
-            <th>Date<i class="icon-arrow-down-small"></i></th>
-            <th>Visits<i class="icon-arrow-down-small"></i></th>
-            <th>Unique<i class="icon-arrow-down-small"></i></th>
-            <th>Singups<i class="icon-arrow-down-small"></i></th>
-            <th>FTD<i class="icon-arrow-down-small"></i></th>
-            <th>Depositors<i class="icon-arrow-down-small"></i></th>
-            <th>Deposits ($)<i class="icon-arrow-down-small"></i></th>
-            <th>Payout ($)<i class="icon-arrow-down-small"></i></th>
-            <th>Turnover<i class="icon-arrow-down-small"></i></th>
-            <th>Deal<i class="icon-arrow-down-small"></i></th>
+            <td>
+              <span>
+                Home page
+              </span>
+              <a href="#">
+                http://www.homepage.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
           </tr>
 
           <tr>
-            <td>test</td>
-            <td>15/08/02(12:58)</td>
-            <td>232</td>
-            <td>114</td>
-            <td>12</td>
-            <td>6</td>
-            <td>3</td>
-            <td>34,436.00</td>
-            <td>234.00</td>
-            <td>421,342.00</td>
-            <td>cpl(200)</td>
+            <td>
+              <span>
+                Currently
+              </span>
+              <a href="#">
+                http://www.currently.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
           </tr>
 
           <tr>
-            <td>test</td>
-            <td>05/05/20(12:58)</td>
-            <td>232</td>
-            <td>114</td>
-            <td>12</td>
-            <td>6</td>
-            <td>3</td>
-            <td>29,436.00</td>
-            <td>941.00</td>
-            <td>784,435.00</td>
-            <td>cpl(200)</td>
+            <td>
+              <span>
+                Blurpix
+              </span>
+              <a href="#">
+                http://www.blurpix.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
           </tr>
 
           <tr>
-            <td>test</td>
-            <td>05/05/20(12:58)</td>
-            <td>232</td>
-            <td>114</td>
-            <td>12</td>
-            <td>6</td>
-            <td>3</td>
-            <td>34,436.00</td>
-            <td>234.00</td>
-            <td>421,342.00</td>
-            <td>cpl(200)</td>
+            <td>
+              <span>
+                Your Site
+              </span>
+              <a href="#">
+                http://www.yoursite.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
           </tr>
 
           <tr>
-            <td>test</td>
-            <td>05/05/20(12:58))</td>
-            <td>232</td>
-            <td>114</td>
-            <td>12</td>
-            <td>6</td>
-            <td>3</td>
-            <td>29,436.00</td>
-            <td>941.00</td>
-            <td>784,435.00</td>
-            <td>cpl(200)</td>
+            <td>
+              <span>
+                Google
+              </span>
+              <a href="#">
+                http://www.google.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
           </tr>
 
           <tr>
-            <td>test</td>
-            <td>05/05/20(12:58)</td>
-            <td>232</td>
-            <td>114</td>
-            <td>12</td>
-            <td>6</td>
-            <td>3</td>
-            <td>34,436.00</td>
-            <td>234.00</td>
-            <td>421,342.00</td>
-            <td>cpl(200)</td>
+            <td>
+              <span>
+                Facebook
+              </span>
+              <a href="#">
+                http://www.facebookcom
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
           </tr>
 
           <tr>
-            <td>test</td>
-            <td>05/05/20(12:58)</td>
-            <td>232</td>
-            <td>114</td>
-            <td>12</td>
-            <td>6</td>
-            <td>3</td>
-            <td>29,436.00</td>
-            <td>941.00</td>
-            <td>784,435.00</td>
-            <td>cpl(200)</td>
+            <td>
+              <span>
+                Dashboard
+              </span>
+              <a href="#">
+                http://www.dashboard.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
           </tr>
 
           <tr>
-            <td>test</td>
-            <td>05/05/20(12:58)</td>
-            <td>232</td>
-            <td>114</td>
-            <td>12</td>
-            <td>6</td>
-            <td>3</td>
-            <td>34,436.00</td>
-            <td>234.00</td>
-            <td>421,342.00</td>
-            <td>cpl(200)</td>
+            <td>
+              <span>
+                Blurax
+              </span>
+              <a href="#">
+                http://www.blurax.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <span>
+                Piece of Wine
+              </span>
+              <a href="#">
+                http://www.pieceofwine.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <span>
+                Twitter
+              </span>
+              <a href="#">
+                http://www.twitter.com
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
           </tr>
         </table>
-
-        <div class="belt">
-          <i class="icon-arrow-left"></i>
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>4</span>
-          <span>5</span>
-          <span>6</span>
-          <span>7</span>
-          <span>8</span>
-          <span>9</span>
-          <i class="icon-arrow-right"></i>
+        <div class="button">
+          <button class="btn btn-orange">
+            + add new
+          </button>
         </div>
       </div>
-    </div>
+    </article>
+
+    <!-- Personal Data -->
+    <article class="personal-data-form">
+      <div class="personal-data container" id="sb-personal">
+        <div class="title">
+          <h4>PERSONAL DATA</h4>
+        </div>
+        <div class="container-form">
+          <form action="" method="POST" onsubmit="return validation()">
+            <div class="field">
+              <label>Name</label>
+              <input type="text" name="user-name" required id="Name">
+            </div>
+            <div class="field">
+              <label>Surname</label>
+              <input type="text" name="user-surname" required id="Surname">
+            </div>
+            <div class="field">
+              <label>E-mail</label>
+              <input type="email" name="user-email" required id="EMail">
+            </div>
+            <div class="field">
+              <label>Phone number</label>
+              <input type="text" name="user-phone" min="9" max="9" required id="Telephone">
+            </div>
+          </form>
+        </div>
+        <div class="container-form">
+          <form action="" method="POST">
+            <div class="field">
+              <label>Skype</label>
+              <input type="text" name="user-skype">
+            </div>
+            <div class="field">
+              <label>ICQ</label>
+              <input type="text" name="user-icq">
+            </div>
+            <div class="field">
+              <label>Man</label>
+              <input type="text" name="user-man">
+            </div>
+          </form>
+        </div>
+        <div class="container-form">
+          <form action="" method="POST">
+            <div class="field">
+              <label>Wallet</label>
+              <input type="text" name="user-wallet">
+            </div>
+          </form>
+        </div>
+        <div class="container-form">
+          <form action="" method="POST">
+            <div class="field">
+              <label>Password</label>
+              <input type="password" name="user-password" id="Password">
+            </div>
+            <div class="field">
+              <label>Repeat</label>
+              <input type="password" name="user-rep-password" id="Repeat">
+            </div>
+          </form>
+        </div>
+        <div class="button">
+          <button class="btn btn-orange" type="submit"><span>Save</span></button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Detalist Statistic -->
+    <article class="detalist">
+      <div class="tables container" id="sb-details">
+        <div class="title">
+          <h4>DETALIST STATISTIC</h4>
+        </div>
+
+        <div class="calendar">
+          <input type="date" id="start" value="2020-02-01" min="2019-02-01">
+          <input type="date" id="end" value="2020-02-01" min="2019-02-01">
+          <button class="btn btn-orange" style="width: 30px; padding-top: 9px;">
+            <i class="icon-refresh"></i>
+          </button>
+        </div>
+
+        <div class="statistic">
+          <table>
+            <tr>
+              <th>Tracker<i class="icon-arrow-down-small"></i> </th>
+              <th>Date<i class="icon-arrow-down-small"></i></th>
+              <th>Visits<i class="icon-arrow-down-small"></i></th>
+              <th>Unique<i class="icon-arrow-down-small"></i></th>
+              <th>Singups<i class="icon-arrow-down-small"></i></th>
+              <th>FTD<i class="icon-arrow-down-small"></i></th>
+              <th>Depositors<i class="icon-arrow-down-small"></i></th>
+              <th>Deposits ($)<i class="icon-arrow-down-small"></i></th>
+              <th>Payout ($)<i class="icon-arrow-down-small"></i></th>
+              <th>Turnover<i class="icon-arrow-down-small"></i></th>
+              <th>Deal<i class="icon-arrow-down-small"></i></th>
+            </tr>
+
+            <tr>
+              <td>test</td>
+              <td>05/05/20(12:58)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34,436.00</td>
+              <td>234.00</td>
+              <td>421,342.00</td>
+              <td>cpl(200)</td>
+            </tr>
+
+            <tr>
+              <td>test</td>
+              <td>05/05/20(12:58)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>29,436.00</td>
+              <td>941.00</td>
+              <td>784,435.00</td>
+              <td>cpl(200)</td>
+            </tr>
+
+            <tr>
+              <td>test</td>
+              <td>05/05/20(12:58)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34,436.00</td>
+              <td>234.00</td>
+              <td>421,342.00</td>
+              <td>cpl(200)</td>
+            </tr>
+
+            <tr>
+              <td>test</td>
+              <td>05/05/20(12:58))</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>29,436.00</td>
+              <td>941.00</td>
+              <td>784,435.00</td>
+              <td>cpl(200)</td>
+            </tr>
+
+            <tr>
+              <td>test</td>
+              <td>05/05/20(12:58)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34,436.00</td>
+              <td>234.00</td>
+              <td>421,342.00</td>
+              <td>cpl(200)</td>
+            </tr>
+
+            <tr>
+              <td>test</td>
+              <td>05/05/20(12:58)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>29,436.00</td>
+              <td>941.00</td>
+              <td>784,435.00</td>
+              <td>cpl(200)</td>
+            </tr>
+
+            <tr>
+              <td>test</td>
+              <td>05/05/20(12:58)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34,436.00</td>
+              <td>234.00</td>
+              <td>421,342.00</td>
+              <td>cpl(200)</td>
+            </tr>
+
+          </table>
+
+          <div class="belt">
+            <i class="icon-arrow-left"></i>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <i class="icon-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- banners -->
+    <article class="banners">
+      <div class="links container" id="sb-banner">
+        <div class="title">
+          <h4>BANNERS</h4>
+        </div>
+        <div class="button">
+          <button class="btn btn-orange">
+            + add new
+          </button>
+        </div>
+        <table>
+          <tr>
+            <td>
+              <span>
+                Banner main
+              </span>
+              <a href="#">
+                http://www.website.com/bannermain.gif
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Sing up banner
+              </span>
+              <a href="#">
+                http://www.website.com/signup.gif
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Banner left side
+              </span>
+              <a href="#">
+                http://www.website.com/leftside.gif
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Vertical banner
+              </span>
+              <a href="#">
+                http://www.website.com/ver.gif
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Front banner
+              </span>
+              <a href="#">
+                http://www.website.com/front.gif
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Horizontal banner
+              </span>
+              <a href="#">
+                http://www.website.com/horizontal.gif
+              </a>
+              <div class="icons">
+                <i class="icon-links"></i>
+                <i class="icon-trash"></i>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="button">
+          <button class="btn btn-orange">
+            + add new
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Payout History -->
+    <article class="payout-history">
+      <div class="tables container" id="sb-payout">
+        <div class="title">
+          <h4>PAYOUT HISTORY</h4>
+        </div>
+
+        <div class="calendar">
+          <input type="date" id="start" value="" min="">
+          <input type="date" id="end" value="" min="">
+          <button class="btn btn-orange" style="width: 30px; padding-top: 9px;">
+            <i class="icon-refresh"></i>
+          </button>
+        </div>
+
+        <div class="statistic">
+          <table>
+            <tr>
+              <th>Date<i class="icon-arrow-down-small"></i> </th>
+              <th>Amount($)<i class="icon-arrow-down-small"></i></th>
+              <th>Deal<i class="icon-arrow-down-small"></i></th>
+              <th>Account<i class="icon-arrow-down-small"></i></th>
+            </tr>
+
+            <tr>
+              <td>17/08/02(12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl(200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr>
+              <td>15/08/02(12:58)</td>
+              <td>29,436.00</td>
+              <td>cpl(200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr>
+              <td>17/08/02(12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl(200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr>
+              <td>15/08/02(12:58)</td>
+              <td>29,436.00</td>
+              <td>cpl(200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr>
+              <td>17/08/02(12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl(200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr>
+              <td>15/08/02(12:58)</td>
+              <td>29,436.00</td>
+              <td>cpl(200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr>
+              <td>17/08/02(12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl(200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr>
+              <td>15/08/02(12:58)</td>
+              <td>29,436.00</td>
+              <td>cpl(200)</td>
+              <td>bank</td>
+            </tr>
+          </table>
+
+          <div class="belt">
+            <i class="icon-arrow-left"></i>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <i class="icon-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+  </section>
+  </article>
   </section>
 
-  <section class="content banners-page">
 
-    <div class="links container" id="sb-banner">
-      <div class="title">
-        <h4>BANNERS</h4>
-      </div>
-      <div class="button">
-        <button class="btn btn-orange">
-          + add new
-        </button>
-      </div>
-      <table>
-        <tr>
-          <td>
-            <span>
-              Banner main
-            </span>
-            <a href="#">
-              http://www.website.com/bannermain.gif
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Sing up banner
-            </span>
-            <a href="#">
-              http://www.website.com/signup.gif
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Banner left side
-            </span>
-            <a href="#">
-              http://www.website.com/leftside.gif
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Vertical banner
-            </span>
-            <a href="#">
-              http://www.website.com/ver.gif
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Front banner
-            </span>
-            <a href="#">
-              http://www.website.com/front.gif
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Horizontal banner
-            </span>
-            <a href="#">
-              http://www.website.com/horizontal.gif
-            </a>
-            <div class="icons">
-              <i class="icon-links"></i>
-              <i class="icon-trash"></i>
-            </div>
-          </td>
-        </tr>
-      </table>
-      <div class="button">
-        <button class="btn btn-orange">
-          + add new
-        </button>
-      </div>
-    </div>
-  </section>
 
   <!-- Pop-ups -->
 

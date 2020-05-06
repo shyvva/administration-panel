@@ -58,12 +58,9 @@ function sidebarActive() {
         if (idSidebar == idPage) {
           page.classList.add('active');
           sidebar.classList.add('side-click');
-          console.log('I add:', idSidebar);
         } else {
           page.classList.remove('active');
           sidebar.classList.remove('side-click');
-          console.log('I take:', idSidebar);
-
         }
       }
     });
