@@ -1,17 +1,18 @@
 body {
   display: grid;
-  grid-template-columns: 150px ;
-  grid-template-rows: 50px ;
+  grid-template-columns: 150px;
+  grid-template-rows: 50px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin: 0 auto;
   background: $light-grey;
   overflow-x: hidden;
-
 }
+
 .active {
   display: flex;
 }
+
 .no-active {
   display: none;
 }
