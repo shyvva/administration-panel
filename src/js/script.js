@@ -16,7 +16,6 @@ function burgerSidebar() {
 
     void btn.offsetWidth;
     btn.classList.add(btnClass);
-    console.log(sidebar);
     sidebar.classList.toggle('dis-block');
     body.classList.toggle('grid');
   });

@@ -133,13 +133,22 @@
   }
   /* Links */
   .links {
+    .container {
+      margin: 0;
+    }
+
     table {
-      margin: 30px;
       margin-bottom: 0px;
+      margin: 30px;
+
+      tr {
+        text-align: center;
+      }
 
       td {
         width: 100%;
         justify-content: space-between;
+        display: block;
 
         span {
           text-align: left;
@@ -172,20 +181,15 @@
       }
     }
   }
-  /* Detail */
-  .statistic {
+  /* Banners */
+  .banners {
+
     table {
-      tr {
-        flex-direction: row;
+      margin: 0;
+    }
 
-        th {
-          flex: 33.3%;
-        }
-
-        td {
-          flex: 33.3%;
-        }
-      }
+    .container {
+      margin: 0;
     }
   }
 }
