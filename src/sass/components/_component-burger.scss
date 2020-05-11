@@ -8,6 +8,7 @@ $toggle-anim-speed: 0.9s;
 .burger {
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 10px;
 }
 
 .btn-toggle {
@@ -22,6 +23,7 @@ $toggle-anim-speed: 0.9s;
   outline: none;
   transform: translateZ(0);
   transition: transform 0.1s ease-out;
+  padding-top: 30px;
 
   &:active {
     transform: translateY(4px);
