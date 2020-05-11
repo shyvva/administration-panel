@@ -6,13 +6,16 @@
     align-items: center;
     border-bottom: 1px solid $button-grey-hover;
     justify-content: center;
+
     form {
       width: 50%;
       max-width: 100%;
+
       .field {
         align-items: center;
         display: flex;
         margin-bottom: 15px;
+
         label {
           flex: 30%;
           text-align: left;

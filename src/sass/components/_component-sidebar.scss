@@ -1,20 +1,23 @@
-.sidebar-menu{
+.sidebar-menu {
   border-left: 2px solid transparent;
   font-size: 12px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  i{
-  padding: 10px;
+
+  i {
+    padding: 10px;
   }
 }
-.sidebar-menu:hover{
- background: $inputs-hover-color;
- color: $inputs-color;
- border-left: 2px solid $main-color;
+
+.sidebar-menu:hover {
+  background: $inputs-hover-color;
+  color: $inputs-color;
+  border-left: 2px solid $main-color;
 }
-.side-click{
+
+.side-click {
   background: $inputs-hover-color;
   color: $inputs-color;
   border-left: 2px solid $main-color;

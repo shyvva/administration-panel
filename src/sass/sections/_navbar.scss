@@ -1,56 +1,55 @@
-.navbar{
-    grid-area: 1 / 2 / 2 / 3;
-    background: white;
-    justify-self: stretch;
-    display: flex;
-    flex-direction: row-reverse;
+.navbar {
+  grid-area: 1 / 2 / 2 / 3;
+  background: white;
+  justify-self: stretch;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-family: $brand-font;
+  color: $button-grey;
+  height: auto;
+
+  .money {
     align-items: center;
-    font-family: $brand-font;
-    color: $button-grey;
-    height: auto;
+    margin: 0 10px;
 
-    .money{
-        align-items: center;
-        margin: 0 10px;
-
-        i{
-            padding: 0 7px;
-        }
-
-        span{
-            font-weight: 500;
-        }
+    i {
+      padding: 0 7px;
     }
 
-    i{
-        margin: 0 10px;
-
+    span {
+      font-weight: 500;
     }
+  }
 
-    .profil{
-        display: flex;
-        align-items: center;
-        margin: 0 10px;
+  i {
+    margin: 0 10px;
+  }
 
-        .name{
-            height: 15px;
-            font-size: 12px;
-            padding-right: 10px;
-        }
+  .profil {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+
+    .name {
+      height: 15px;
+      font-size: 12px;
+      padding-right: 10px;
     }
+  }
 
-    .icon-notification{
-        border-left: 1px solid $button-grey-hover;
-        border-right: 1px solid $button-grey-hover;
-        padding: 15px;
-        margin: 0;
-    }
+  .icon-notification {
+    border-left: 1px solid $button-grey-hover;
+    border-right: 1px solid $button-grey-hover;
+    padding: 15px;
+    margin: 0;
+  }
 
-    .icon-quit{
-        border-left: 1px solid $button-grey-hover;
-        border-right: 1px solid $button-grey-hover;
-        padding: 15px;
-        margin: 0;
-        visibility: visible;
-    }
+  .icon-quit {
+    border-left: 1px solid $button-grey-hover;
+    border-right: 1px solid $button-grey-hover;
+    padding: 15px;
+    margin: 0;
+    visibility: visible;
+  }
 }

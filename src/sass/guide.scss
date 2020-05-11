@@ -1,7 +1,9 @@
 @import "variable";
 @import "./components/component-buttons";
+
+
 h1 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 20px;
   color: $inputs-color;
   padding-right: 10px;

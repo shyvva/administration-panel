@@ -1,5 +1,4 @@
-
-.btn{
+.btn {
   color: $light-grey;
   width: auto;
   margin-left: 10px;
@@ -9,39 +8,47 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  i{
-      color: $inputs-color;
-  }
 
+  i {
+    color: $inputs-color;
+  }
 }
-.btn-orange{
+
+.btn-orange {
   background-color: $main-color;
 }
-.btn-orange:hover{
+
+.btn-orange:hover {
   background-color: $hover-main-color;
 }
-.btn-grey{
+
+.btn-grey {
   background-color: $button-grey;
 }
-.btn-grey:hover{
+
+.btn-grey:hover {
   background-color: $button-grey-hover;
 }
-.btn-trans{
+
+.btn-trans {
   background-color: transparent;
   color: $links-color;
 }
-.btn-trans:hover{
+
+.btn-trans:hover {
   background-color: $inputs-color;
   color: $button-grey;
 }
-.button{
+
+.button {
   display: flex;
   margin: 20px 0;
   justify-content: center;
   align-items: center;
-  .btn{
-      width: 110px;
-      height: 35px;
-      margin-top: 20px;
+
+  .btn {
+    width: 110px;
+    height: 35px;
+    margin-top: 20px;
   }
 }

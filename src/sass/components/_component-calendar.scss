@@ -1,15 +1,15 @@
-
-.calendar{
+.calendar {
   display: flex;
   align-items: center;
   padding: 30px;
   justify-content: center;
   border-bottom: 1px solid $button-grey-hover;
-  input{
-      font-size: 12px;
-      font-family: $brand-font;
-      border-width: 1px;
-      border-color: $inputs-color;
-      padding: 5px;
+
+  input {
+    font-size: 12px;
+    font-family: $brand-font;
+    border-width: 1px;
+    border-color: $inputs-color;
+    padding: 5px;
   }
 }
