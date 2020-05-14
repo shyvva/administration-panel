@@ -82,12 +82,11 @@
       }
     }
 
-    .table {
-      width: 65%;
-      margin-bottom: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .chart-contanier {
+      position: relative;
+      margin: auto;
+      height: 80vh;
+      width: 80vw;
 
       #myChart {
         width: 784px;

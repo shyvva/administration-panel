@@ -14,7 +14,16 @@
   .title {
     justify-content: left;
   }
+
+  .container {
+    margin: auto;
+  }
+
   /* Sidebar */
+  .btn-toggle {
+    display: flex;
+  }
+
   .sidebar {
     display: none;
 
@@ -76,6 +85,13 @@
       }
     }
   }
+
+  /*Chat*/
+
+  .chat-contact-name {
+    display: none;
+  }
+
   /* Navbar */
   .navbar {
     display: none;
@@ -124,6 +140,10 @@
       margin: 0;
       margin-bottom: 50px;
 
+      .chart-contanier {
+        height: 200px;
+      }
+
       .color-button {
         display: flex;
         width: 100%;
@@ -157,7 +177,7 @@
       td {
         width: 100%;
         justify-content: space-between;
-        display: block;
+        display: grid;
 
         span {
           text-align: left;
@@ -170,6 +190,7 @@
 
         .icons {
           padding: 0 30px;
+          justify-self: flex-start;
         }
       }
     }
@@ -201,6 +222,7 @@
     }
   }
 }
+
 /* Class added in JS Burger()*/
 .dis-block {
   display: block;

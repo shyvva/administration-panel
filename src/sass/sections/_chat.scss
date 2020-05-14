@@ -1,0 +1,42 @@
+chat {
+  border-top: 1px solid #333333;
+}
+
+.chat-contact-picture {
+  width: 43px;
+  height: 43px;
+  z-index: 3;
+  margin: 10px 10px 0 30px;
+  background-image: url("../images/photo-mikhael.png");
+  position: relative;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: $transition;
+    cursor: pointer;
+  }
+}
+
+.chat-contact-picture .dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  height: 12px;
+  width: 12px;
+  background-color: $green;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.chat-contact-name {
+  padding-top: 10px;
+  margin-left: 20px;
+
+  a {
+    vertical-align: middle;
+    font-size: 14px;
+    color: $links-color;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  }
+}

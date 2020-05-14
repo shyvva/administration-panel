@@ -50,16 +50,14 @@ function sidebarActive() {
       event.preventDefault();
       const idSidebar = sidebar.getAttribute('id');
       const pages = document.querySelectorAll('.container');
-      sidebar.classList.remove('side-click');
       for (let page of pages) {
-        page.classList.remove('active');
         const idPage = page.getAttribute('id');
-        if (idSidebar == idPage) {
-          page.classList.add('active');
+        if (idSidebar === idPage) {
           sidebar.classList.add('side-click');
-        } else {
-          page.classList.remove('active');
+          page.classList.add('active');
+        } else  {
           sidebar.classList.remove('side-click');
+          page.classList.remove('active');
         }
       }
     });
