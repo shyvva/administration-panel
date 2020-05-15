@@ -2,6 +2,7 @@
 @import "./components/component-buttons";
 
 
+
 h1 {
   font-family: "Dancing Script", cursive;
   font-size: 20px;
@@ -16,3 +17,93 @@ h4 {
   margin: 0;
   font-weight: normal;
 }
+
+.links {
+  table {
+    tbody {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+
+      tr {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    margin: 30px 0;
+
+    td {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $button-grey;
+      border-collapse: collapse;
+      border-spacing: 0;
+      padding: 10px 10px;
+      width: 100%;
+
+      a {
+        color: $links-color;
+        text-decoration: none;
+      }
+
+      i {
+        color: transparent;
+        margin: 0 5px;
+      }
+    }
+
+    td:hover {
+      background-color: $inputs-color;
+
+      .icon-links {
+        color: $hover-main-color;
+      }
+
+      .icon-trash {
+        color: $button-grey;
+      }
+    }
+  }
+}
+
+    .field {
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+
+    label {
+      flex: 60%;
+      text-align: left;
+      color: #979797;
+      font-family: "Open Sans", Helvetica, Arial;
+      margin-left: 700px;
+    }
+
+    input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: #ffffff;
+      border: 1px solid $button-grey-hover;
+      padding: 2px;
+      flex: 40%;
+      margin-right: 200px;
+    }
+}
+
+.chat-contact-name {
+  padding-top: 10px;
+  margin-left: 20px;
+
+
+  a {
+    vertical-align: middle;
+    font-size: 14px;
+    color: $links-color;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
