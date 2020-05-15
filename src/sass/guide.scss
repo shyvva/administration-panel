@@ -1,8 +1,6 @@
 @import "variable";
 @import "./components/component-buttons";
 
-
-
 h1 {
   font-family: "Dancing Script", cursive;
   font-size: 20px;
@@ -68,42 +66,40 @@ h4 {
   }
 }
 
-    .field {
-    align-items: center;
-    display: flex;
-    margin-bottom: 15px;
+.field {
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
 
-    label {
-      flex: 60%;
-      text-align: left;
-      color: #979797;
-      font-family: "Open Sans", Helvetica, Arial;
-      margin-left: 700px;
-    }
+  label {
+    flex: 60%;
+    text-align: left;
+    color: #979797;
+    font-family: "Open Sans", Helvetica, Arial;
+    margin-left: 700px;
+  }
 
-    input {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      background-color: #ffffff;
-      border: 1px solid $button-grey-hover;
-      padding: 2px;
-      flex: 40%;
-      margin-right: 200px;
-    }
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    border: 1px solid $button-grey-hover;
+    padding: 2px;
+    flex: 40%;
+    margin-right: 200px;
+  }
 }
 
 .chat-contact-name {
   padding-top: 10px;
   margin-left: 20px;
 
-
   a {
     vertical-align: middle;
     font-size: 14px;
     color: $links-color;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 }
-
