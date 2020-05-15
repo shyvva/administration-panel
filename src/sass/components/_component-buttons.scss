@@ -20,6 +20,7 @@
 
 .btn-orange:hover {
   background-color: $hover-main-color;
+  cursor: pointer;
 }
 
 .btn-grey {
@@ -28,6 +29,7 @@
 
 .btn-grey:hover {
   background-color: $button-grey-hover;
+  cursor: pointer;
 }
 
 .btn-trans {
@@ -38,6 +40,7 @@
 .btn-trans:hover {
   background-color: $inputs-color;
   color: $button-grey;
+  cursor: pointer;
 }
 
 .button {

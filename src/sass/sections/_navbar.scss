@@ -45,6 +45,16 @@
     margin: 0;
   }
 
+  .notification-dot {
+      position: absolute;
+      top: 12px;
+      right: 260px;
+      height: 8px;
+      width: 8px;
+      background-color: $main-color;
+      border-radius: 50%;
+  }
+
   .icon-quit {
     border-left: 1px solid $button-grey-hover;
     border-right: 1px solid $button-grey-hover;
