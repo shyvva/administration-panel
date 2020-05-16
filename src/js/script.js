@@ -50,14 +50,15 @@ function sidebarActive() {
       event.preventDefault();
       const idSidebar = sidebar.getAttribute('id');
       const pages = document.querySelectorAll('.container');
+      sidebar.classList.remove('side-click');
       for (let page of pages) {
         const idPage = page.getAttribute('id');
-        if (idSidebar === idPage) {
-          sidebar.classList.add('side-click');
+        if (idSidebar == idPage) {
           page.classList.add('active');
+          sidebar.classList.add('side-click');
         } else  {
-          sidebar.classList.remove('side-click');
           page.classList.remove('active');
+          sidebar.classList.remove('side-click');
         }
       }
     });
@@ -97,4 +98,9 @@ const chart = new Chart(ctx, {
       hidden: true,
     }]
   },
+
+  options: {
+    responsive: true,
+  }
+
 });
