@@ -50,7 +50,7 @@ function sidebarActive() {
       event.preventDefault();
       const idSidebar = sidebar.getAttribute('id');
       const pages = document.querySelectorAll('.container');
-      sidebar.classList.remove('side-click');
+      sidebars.forEach(s => s.classList.remove('side-click'));
       for (let page of pages) {
         const idPage = page.getAttribute('id');
         if (idSidebar == idPage) {
@@ -58,7 +58,6 @@ function sidebarActive() {
           sidebar.classList.add('side-click');
         } else  {
           page.classList.remove('active');
-          sidebar.classList.remove('side-click');
         }
       }
     });
